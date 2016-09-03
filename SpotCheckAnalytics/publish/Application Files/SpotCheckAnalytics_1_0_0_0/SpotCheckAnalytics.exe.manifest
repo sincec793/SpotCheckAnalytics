@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SpotCheckAnalytics.exe" version="1.0.0.0" publicKeyToken="a31bfe3531282201" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Watermine_logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SpotCheckAnalytics" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SpotCheckAnalytics.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SpotCheckAnalytics.exe" size="164256">
+      <assemblyIdentity name="SpotCheckAnalytics" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>lBnc63W2kiPHMFj/Lxk81ModVlI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Net.Http.dll" size="180832">
+      <assemblyIdentity name="System.Net.Http" version="2.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>vnPECG7jPdg4oYzUFMTu1U4KLqc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SpotCheckAnalytics.exe.config" size="1325">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WI1+PFtruDQnd3lgQ0+kp0c9KHs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Watermine_logo.ico" size="66782">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qWy/kWh+5Tp09COp9TIgcq7pVdg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=BISQUEST\michael" issuerKeyHash="49e548b6414cc55b855eaab9292ddd204bcce4a8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WcFwEAT4ehg33dDVOG7+TZJyW5o=</DigestValue></Reference></SignedInfo><SignatureValue>BDwhRhokUbhZ/XWA0wPvrUIrHbuRsKVNeWKl0yvFbNSn1JjiFAmcxt1iGC/XH3X1QjE+0yuDLzSadUF/94VUFC2lEpAbaRtIkWsEvuI/HgwNbP7dlG0DrctV4KvpyqOiBQNI0xTIlrtku0BWDBibkmenO/L1a1vNzn3ulgd0JxA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tVhdCoeAhq7WCiHJM5spAmSd3uF+xmMVDeEpSBigGEoKzByitj9+QZImBQpuOXwBs+liSeaePpOArgSs1ETqqaIVC/SceLvlxAW9jNvQi5K+a8l8kVFEgfW2K8l2WzkidsD6WFw4zUsokKIMEINHrUSQECjdeTPOlFIBr32zRck=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9a5b72924dfe6e38d5d0dd37187af8041070c159" Description="" Url=""><as:assemblyIdentity name="SpotCheckAnalytics.exe" version="1.0.0.0" publicKeyToken="a31bfe3531282201" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BISQUEST\michael</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>X94rHdqIP7tueVBUH4TP+MdaOdo=</DigestValue></Reference></SignedInfo><SignatureValue>IXewbcr3wyS1j34kxxIUA1dvf+VOQAm2d+jc45Ue/vtLSrrueVPrbOLRTfQbo4uYD0nKwvkegCcKMyeWbSdnP2GEhM3JL2nYwSzjByzokoJ0vyB5/Aly15Zr7/5gg/9ZFvY9OUvpyd0SlEAoXaRzIBL9lZ6ptPrsLTLB3nYBZY4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tVhdCoeAhq7WCiHJM5spAmSd3uF+xmMVDeEpSBigGEoKzByitj9+QZImBQpuOXwBs+liSeaePpOArgSs1ETqqaIVC/SceLvlxAW9jNvQi5K+a8l8kVFEgfW2K8l2WzkidsD6WFw4zUsokKIMEINHrUSQECjdeTPOlFIBr32zRck=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQW+/8g/yDy6BBgU5r1ZsQWzANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAQgBJAFMAUQBVAEUAUwBUAFwAbQBpAGMAaABhAGUAbDAeFw0xNjA4MjAyMTM3MzBaFw0xNzA4MjEwMzM3MzBaMCsxKTAnBgNVBAMeIABCAEkAUwBRAFUARQBTAFQAXABtAGkAYwBoAGEAZQBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1WF0Kh4CGrtYKIckzmykCZJ3e4X7GYxUN4SlIGKAYSgrMHKK2P35BkiYFCm45fAGz6WJJ5p4+k4CuBKzUROqpohUL9Jx4u+XEBb2M29CLkr5ryXyRUUSB9bYryXZbOSJ2wPpYXDjNSyiQogwQg0etRJAQKN15M86UUgGvfbNFyQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBADYJBdVR1AM/+8apFDhbdtXeETxUMZ8Nico3/A39ZTWqp1nG0CoVfA4+Nr+KLu2mevqBsJcrfwYPZLNkg6R3VK5Ik+FwOudpp8XUYzMFOub37FL/kQ4TUc5utBbDxcvs5odbpkM02qLoCo0aeQTeX+hmpFWnpySPSGVvYqe5UNEp</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
